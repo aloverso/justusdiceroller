@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import {Die} from "./domain/Die";
+import { Die } from "./domain/Die";
 
 export interface LoaderProps {
   dieType: Die;

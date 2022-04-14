@@ -2,8 +2,8 @@ import React, { ReactElement, useState } from "react";
 import { Die } from "./domain/Die";
 import { Roll } from "./domain/Roll";
 import { Loader } from "./Loader";
-import AddCircleIcon from '@material-ui/icons/AddCircle';
-import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
+import AddCircleIcon from "@material-ui/icons/AddCircle";
+import RemoveCircleIcon from "@material-ui/icons/RemoveCircle";
 import * as client from "./JustusClient";
 
 export const Roller = (): ReactElement => {
@@ -59,22 +59,22 @@ export const Roller = (): ReactElement => {
       <div className="row ptl">
         <div className="col-xs-12 fdr fjc">
           <button onClick={(): void => handleClick("d4")}>
-            <img className="width-100" src={'/assets/d4.svg'} alt="d4" />
+            <img className="width-100" src={"/assets/d4.svg"} alt="d4" />
           </button>
           <button onClick={(): void => handleClick("d6")}>
-            <img className="width-100" src={'/assets/d6.svg'} alt="d6" />
+            <img className="width-100" src={"/assets/d6.svg"} alt="d6" />
           </button>
           <button onClick={(): void => handleClick("d8")}>
-            <img className="width-100" src={'/assets/d8.svg'} alt="d8" />
+            <img className="width-100" src={"/assets/d8.svg"} alt="d8" />
           </button>
           <button onClick={(): void => handleClick("d10")}>
-            <img className="width-100" src={'/assets/d10.svg'} alt="d10" />
+            <img className="width-100" src={"/assets/d10.svg"} alt="d10" />
           </button>
           <button onClick={(): void => handleClick("d12")}>
-            <img className="width-100" src={'/assets/d12.svg'} alt="d12" />
+            <img className="width-100" src={"/assets/d12.svg"} alt="d12" />
           </button>
           <button onClick={(): void => handleClick("d20")}>
-            <img className="width-100" src={'/assets/d20.svg'} alt="d20" />
+            <img className="width-100" src={"/assets/d20.svg"} alt="d20" />
           </button>
         </div>
       </div>

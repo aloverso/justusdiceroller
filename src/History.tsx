@@ -1,7 +1,7 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import dayjs from "dayjs";
-import {Die} from "./domain/Die";
-import {Roll} from "./domain/Roll";
+import { Die } from "./domain/Die";
+import { Roll } from "./domain/Roll";
 import * as client from "./JustusClient";
 
 export const History = (): ReactElement => {
@@ -26,7 +26,7 @@ export const History = (): ReactElement => {
       onSuccess: (history) => setGroupedHistory(groupByDate(history)),
       onError: () => {},
     });
-  }, [client]);
+  }, []);
 
   const dayOfWeekFormat = (timestamp: string): string => {
     return dayjs(timestamp).format("ddd, MMM D YYYY");
